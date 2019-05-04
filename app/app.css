@@ -1,0 +1,11 @@
+.wrapper {
+    padding-left: 250px;
+    top: 64px;
+    position: absolute;
+    width: 100%;
+}
+
+.sidenav{
+    top: 65px;
+    width: 250px;
+}

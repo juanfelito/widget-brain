@@ -1,0 +1,33 @@
+{
+  "name": "widget-brain",
+  "version": "1.0.0",
+  "description": "Frontend test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,chart.js,materialize-css}/**/*\" app/lib -C"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanfelito/widget-brain.git"
+  },
+  "author": "Juan Felipe Balcero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanfelito/widget-brain/issues"
+  },
+  "homepage": "https://github.com/juanfelito/widget-brain#readme",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-loader": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "chart.js": "^2.8.0",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="widgetBrain" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WidgetBrain Test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="lib/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <ul id="user-dropdown" class="dropdown-content">
+    <li><a href="#!">My account</a></li>
+    <li><a href="#!">Settings</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Log out</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper black-text">
+      <a href="#" class="brand-logo">PREDICTIVE MAINTENANCE</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="#!" data-target="user-dropdown">Juan Felipe Balcero<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a  href="#!"><i class="material-icons">power_settings_new</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/port.jpg">
+      </div>
+    </div></li>
+    <li><a class="subheader">Terminal name</a></li>
+    <li><a href="#">WEST</a></li>
+    <li><a class="subheader">Country code</a></li>
+    <li><a href="#">NDL</a></li>
+    <li><a class="subheader">Address</a></li>
+    <li><a href="#">Medellin, Colombia<i class="material-icons right">place</i></a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+  <div ng-view class="wrapper"></div>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="lib/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>
